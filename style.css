@@ -245,6 +245,7 @@ footer{
     .logo{
         justify-content: center;
         margin: 0 auto;
+        text-align: center;
 
     }
     nav{
