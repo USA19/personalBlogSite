@@ -1,0 +1,326 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    font-size: 10px;
+}
+.header{
+    background-color: #F8F8F8;
+}
+h1{
+    color:#143774;
+    font-family: Lora;
+    font-size: 1.6rem;
+}
+.slogan{
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    color:#1792D2;
+    font-size: 1.2 rem;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+   
+    max-width: 900px;
+    
+    padding:2em 0;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+nav{
+    
+    margin-top: 1.5em;
+    display: flex;
+    text-transform: uppercase;
+   float: right;
+}
+nav ul {
+list-style-type: none;
+padding:0;
+display: flex;
+justify-content: flex-end;
+
+
+}
+
+nav a{
+    font-size: 0.9rem;
+    margin :0.9em;
+    text-decoration: none;
+    color: #717171;
+    
+}
+
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: rgb(34, 27, 17);
+}
+
+.active{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+
+/* blog posts Styling */
+.mt-10{
+    margin-top: 20px;
+}
+main{
+    width: 65%;
+}
+
+.sideBar{
+    width: 25%;
+}
+h2,h3{
+    font-family: Lora;
+    color: #143774;
+}
+.recent-blog-img{
+    width: 100%;
+    /* height: 391px;
+  
+    object-fit: cover; */
+}
+.recent-blog-first-img{
+    width: 100%;
+    height: 391px;
+  
+    object-fit: cover;
+}
+.blog-date{
+    font-size:0.8rem;
+    margin: 1.5em 0;
+    color: #707070;
+}
+.blog-heading{
+font-size: 1.2rem;
+margin-bottom: 1em;
+
+}
+.bold{
+    font-weight: 700;
+
+}
+.blog-link{
+    color: #1792D2;
+    text-decoration: underline;
+
+}
+.blog-detail{
+font-size: 1rem;
+color: #707070;
+font-family: Ubuntu;
+letter-spacing: NaNpx;
+margin-bottom: 1em;
+font-weight: 300;
+
+}
+
+.continue-reading:link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #1792D2;
+    font-family: Ubuntu;
+    font-weight: 700;
+   
+}
+
+.continue-reading:hover{
+color: #143774;
+text-decoration:underline;
+}
+
+.vertical-row{
+    margin-top:1.8em;
+    border-top:1px solid ;
+    color: #707070;
+    width:100%;
+}
+
+
+/* oldPosts */
+
+.old-post-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.old-post-col1{
+    width:35%
+}
+
+.old-post-col2{
+    width:65%;
+    margin-left: 2em;
+}
+
+.old-post-blog-detail{
+font-size: 1.5rem;
+color: #707070;
+font-family: Ubuntu;
+letter-spacing: NaNpx;
+margin-bottom: 1em;
+font-weight: 300;
+}
+
+
+/* about me section */
+
+.about-me{
+    width: 75%;
+    border:20px solid #EBEBEB
+}
+.side-post-tittle{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1em 0;
+    font-weight: bold;
+}
+.about-me-content{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.aside-img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.side-part-2-detail{
+    color:   #143774;
+    font-size: 1rem;
+    margin: 1.5em 0;
+    text-transform: uppercase;
+}
+.aside-part-2-img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+/* footer */
+footer{
+    background-color: #143774;
+    text-align: center;
+    padding: 4em;
+}
+.footer-line{
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+
+}
+/* media query */
+
+@media (max-width: 760px) {
+    .container{
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        padding:2em 0;
+        justify-content: space-between;
+        
+    }
+    .logo{
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+    nav{
+        text-transform: uppercase;
+       margin: 0 auto;
+       margin-top: 1.5em;
+    }
+    /* .slogan{
+        text-align: center;
+    } */
+    main{
+        width: 100%;
+    }
+    
+    .sideBar{
+        width: 100%;
+    }
+    .about-me{
+        width: 95%;
+        margin: 0 auto;
+        /* text-align: center; */
+     }
+    
+     .aside-img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .aside-part-2-img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+  }
+
+
+  
+
+/* mobile */
+
+@media (max-width: 420px) {
+    nav{
+        padding-bottom:20px ;
+    }
+    nav ul {
+         flex-direction: column;
+         text-align: center;
+    }
+    nav ul li{
+        margin:1em auto;
+    }
+    .recent-blog-first-img{
+        height: auto;
+    }
+    .aside-part-2-img{
+        height: 200px;
+    }
+    .old-post-container{
+        flex-direction: column;
+        }
+        .old-post-col1{
+            width: 100%;
+        }
+        .old-post-col2{
+            width: 100%;
+            margin-left: 0;
+        }
+        .about-me{
+            width: 90%;
+            margin-top: 2em;
+        }
+}
+
+
+@media (max-width: 320px) {
+    .about-me{
+        width: 85%;
+}
